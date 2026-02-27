@@ -28,3 +28,18 @@ for i in range(numero_operaciones):
         else:
             saldo -= monto
             print(f"Retiro exitoso. Nuevo saldo: ${saldo}")
+        
+    elif opcion == "3":
+        monto = float(input("Monto a depositar: "))
+        while monto < 0:
+            print("Error: El monto no puede ser negativo.")
+            monto = float(input("Ingrese un monto positivo: "))
+        
+        saldo += monto
+        print(f"Depósito exitoso. Nuevo saldo: ${saldo}")
+
+    else:
+        print("Opción inválida")
+
+# 3. Finalización
+print("\nGracias por usar el cajero automático")
