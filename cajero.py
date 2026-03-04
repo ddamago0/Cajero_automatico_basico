@@ -42,4 +42,4 @@ for i in range(numero_operaciones):
         print("Opción inválida")
 
 # 3. Finalización
-print("\nGracias por usar el cajero automático")
+print("\nGracias por usar el cajero automático :)")
